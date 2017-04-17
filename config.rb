@@ -59,3 +59,5 @@ activate :s3_sync do |s3_sync|
   s3_sync.region                = 'us-east-1'
 end
 
+# FAQ Layout Header
+page "/faq.html", :layout => "faq"

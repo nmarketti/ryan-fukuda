@@ -7,6 +7,7 @@ $(".hero-wrapper").css("height", window.innerHeight);
 // Scroll 2 ID
 var $menu = $("#menu"),
     $window = $(window);
+	$body = $("html, body")
 
 $menu.on("click","a", function(){
     var $this = $(this),
@@ -25,7 +26,23 @@ $menu.on("click","a", function(){
   
   return false;
 });  
-  
+
+ $(document).ready(function() {
+        $('html, body').hide();
+
+        if (window.location.hash) {
+            setTimeout(function() {
+                $('html, body').scrollTop(0).show();
+                $('html, body').animate({
+                    scrollTop: $(window.location.hash).offset().top
+					
+                    })
+            });
+        }
+        else {
+            $('html, body').show();
+        }
+    });  
 
 
 // Hamburger
