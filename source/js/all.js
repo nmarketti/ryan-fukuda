@@ -4,6 +4,29 @@ $(window).on('load resize', function(){
 $(".hero-wrapper").css("height", window.innerHeight);
 });
 
+// Scroll 2 ID
+var $menu = $("#menu"),
+    $window = $(window);
+
+$menu.on("click","a", function(){
+    var $this = $(this),
+        href = $this.attr("href"),
+        topY = $(href).offset().top;
+		$(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+   
+    TweenMax.to($window, 1, {
+        scrollTo:{
+            y: topY, 
+            autoKill: true
+        }, 
+        ease:Power3.easeOut 
+     });
+  
+  return false;
+});  
+  
+
 
 // Hamburger
 $('#toggle').click(function() {
@@ -11,15 +34,6 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
 
-// function myFunc() {
-// 	$(".hero-wrapper").height("height", window.innerHeight);
-// }
-
-// myFunc();
-
-// $( window ).resize(function() {
-//     myFunc();
-//   });
 
 // PRIMARY INTRO ANIMATIC
 
