@@ -144,6 +144,7 @@ a.svg:after {
 	height:12px;
 }
 
+
 .left-arrow img {
 		height:12px;
 }
@@ -152,6 +153,37 @@ a.svg:after {
 	float:left;
 }
 
+.hvr-forward-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward-left:hover, .hvr-forward-left:focus, .hvr-forward-left:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.hvr-forward-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward-right:hover, .hvr-forward-right:focus, .hvr-forward-right:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
 
 /** Panels **/
 

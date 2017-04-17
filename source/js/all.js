@@ -67,12 +67,14 @@ bluepanel.to(".blue-right-block", 1, {xPercent:-100, ease:Power4.easeInOut}, .45
 		 .to(".blue-left-block", 1, {xPercent:100, ease:Power4.easeInOut}, .25)
 		 .to(".close", .5, {rotation:180, opacity:1}, .80)
 
-
-// RED ARROW
 $(".left-arrow").click(function(){ bluepanel.play() }) ;
 
 
 $(".close").click(function(){ bluepanel.reverse() }) ;
+
+
+
+
 
 // RED PANEL
 
@@ -88,25 +90,6 @@ $(".right-arrow").click(function(){ redpanel.play() }) ;
 $(".close").click(function(){ redpanel.reverse() }) ;
 
 
-$(".arrow-hover-left").hover(over, out);
-
-function over(){
-    TweenMax.to(".arrow-hover-left", 0.5, {xPercent:50})
-   }
-
-function out(){
-   	TweenMax.to(".arrow-hover-left", 0.5, {xPercent:0})
- }
-
-
- $(".arrow-hover-right").hover(over, out);
-
-	function over(){
-	 TweenMax.to(".arrow-hover-right", 0.5, {xPercent:-50})
-    }
-    function out(){
-    TweenMax.to(".arrow-hover-right", 0.5, {xPercent:0})
- };
 
 
 /////////////////////////////////
