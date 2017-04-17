@@ -44,7 +44,9 @@ page '/*.txt', layout: false
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :directory_indexes
 end
+
 
 # Live Reload
 configure :development do
@@ -57,5 +59,3 @@ activate :s3_sync do |s3_sync|
   s3_sync.region                = 'us-east-1'
 end
 
-#Image Optimize
-activate :imageoptim
