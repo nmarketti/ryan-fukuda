@@ -1,14 +1,23 @@
-.contact {
-	height:700px;
+.contact-desc {
+	text-align: center;
+	padding-bottom:40px;
+}
+.contact-row {
+	padding-bottom:120px;
 
-	.contact-row {
-		height:100px;
-	}
+	.contact-col{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction:column;
 
-	.contact-desc {
-		text-align: center;
-	}
-
+  	.contact-icon {
+		padding-bottom:15px;
+		     img {
+		  		height:60px;
+	 	 }
+	  }
+   }
 }
 
 .contact-list {
@@ -20,7 +29,6 @@
   		-ms-transition:.2s;
  		-moz-transition:.2s;
   		-webkit-transition:.2s;
- 		 /* ...and now for the proper property */
   		transition:.2s;
 }
 
