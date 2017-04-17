@@ -1,0 +1,138 @@
+a, p, h1, h2, h3, h4, h5, h6 {
+	font-family: $primary-font;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform:uppercase;
+	letter-spacing: .1em;
+}
+
+.blue-title {
+	color: $primary-blue;
+	font-size:1.125em;
+}
+
+.red-title {
+	color:$primary-red;
+	font-size:1.125em;
+}
+
+.intro-text {
+	font-size:1em;
+	font-weight:200;
+	text-decoration:none;
+}
+
+.quote {
+	padding:50px 0px;
+	font-family:$primary-font;
+	font-weight:700;
+	color:$primary-red;
+	font-size:26px;
+}
+
+p {
+	font-size:1.3em;
+	line-height:1.5em;
+	font-weight:300;
+}
+
+.white-text {
+	color:#FFFFFF;
+}
+
+h2 {
+	font-size:5em;
+	color:$opac-grey;
+}
+
+h3 {
+	font-size:2em;
+}
+
+.h4-white {
+	font-size:2.6em;
+	color: $white;
+}
+
+// Section Headers
+
+h4 span {
+ display:block;
+}
+
+.serviceHeader {
+	margin-top:0px;
+}
+
+.section-wrapper {
+	height:250px;
+}
+
+.section-header {
+	height:80px;
+	margin-top:70px;
+	overflow:hidden;
+}
+
+
+.red-text {
+	color:$primary-red;
+}
+
+.yellow-text {
+	color:$primary-yellow;
+}
+
+.blue-text {
+	color:$secondary-blue;
+}
+
+.events-text {
+	color:#0076A9;
+}
+
+.line-text {
+	margin:0px;
+}
+
+/* Service Pricing */
+
+.pricing-desc {
+	font-size:1em;
+	margin:0px;
+}
+
+.payment-plan {
+	margin-top:25px;
+	font-size:.8em;
+}
+
+/* Services Typography */
+
+.details-header {
+	margin-bottom:8px;
+}
+
+.pre-req {
+	font-size:14px;
+	padding-right:25px;
+}
+
+.colon {
+	color:black;
+}
+
+/* FAQ Typography */
+.question-header {
+	text-transform:none;
+	letter-spacing:0em;
+}
+
+ul li {
+	font-size:14px;
+	padding-bottom:10px;
+	font-family:$primary-font;
+	font-style:italic;
+}

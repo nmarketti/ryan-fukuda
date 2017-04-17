@@ -1,0 +1,39 @@
+.btn {
+	display:inline-block;
+	padding:20px;
+
+	a {
+		color:$white;
+		font-size:1.2em;
+		text-decoration:none;
+		font-weight:200;
+	}
+}
+
+.btn-white {
+	background-color:#FFFFFF;
+
+	a {
+		color:$secondary-blue;
+	}
+}
+
+.primary-btn {
+	background-color:$secondary-blue;
+}
+
+.energy-btn {
+	background-color:$primary-red;
+}
+
+.healing-btn {
+	background-color:$primary-yellow;
+}
+
+.workshop-btn {
+	background-color:$secondary-blue;
+}
+
+.events-btn {
+	background-color:$primary-blue;
+}

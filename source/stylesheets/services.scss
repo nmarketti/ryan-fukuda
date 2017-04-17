@@ -1,0 +1,111 @@
+.service-block {
+	height:750px;
+}
+
+.service-title {
+	display: flex;
+  	align-items: center;
+    justify-content: center;
+}
+
+.service-divider {
+	height:30px;
+	overflow:hidden;
+}
+
+.divider-healings {
+	background: url('../images/service-divide-red.jpg');
+	background-size:cover;
+	height:100%;
+}
+
+.divider-workshops {
+	background: url('../images/service-divide-blue.jpg');
+	background-size:cover;
+	height:100%;
+}
+
+.divider-events {
+	background: url('../images/service-divide-light-blue.jpg');
+	background-size:cover;
+	height:100%;
+}
+
+.energy{
+		background-color:$primary-red;
+}
+
+.healing {
+		background-color:$primary-yellow;
+}
+
+.workshops {
+	background-color:$secondary-blue;
+}
+
+.events {
+	background-color:$primary-blue;
+}
+
+// Text Clip for Animation
+
+.service-text-clip {
+	overflow:hidden;
+	position:relative;
+}
+
+// Service Page
+
+.section-hero-text {
+ 	position: absolute;
+  	 top: 55%;
+  	 left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+/*
+.meditation-one-on-one {
+    width: 100%;
+    height: 480px;
+	background-image: url("../images/one-on-one-meditation.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+*/
+
+.service-hero-block {
+	height:480px;
+
+	img {
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+}
+
+.pricing-container {
+	padding: 100px 0px;
+}
+
+.service-red {
+	background:$primary-red;
+}
+
+.service-yellow {
+	background:$primary-yellow;
+}
+
+
+/*********** MOBILE **************/
+/*********** MOBILE **************/
+/*********** MOBILE **************/
+/*********** MOBILE **************/
+
+
+@media only screen and (max-device-width: 736px) { 
+ .service-content {
+ 	margin-top:50px;
+ 	margin-bottom:50px;
+ }
+}

@@ -1,0 +1,29 @@
+.contact {
+	height:700px;
+
+	.contact-row {
+		height:100px;
+	}
+
+	.contact-desc {
+		text-align: center;
+	}
+
+}
+
+.contact-list {
+		font-family: $primary-font;
+		color:$primary-blue;
+		text-transform: uppercase;
+		text-decoration:none;	
+		-o-transition:.2s;
+  		-ms-transition:.2s;
+ 		-moz-transition:.2s;
+  		-webkit-transition:.2s;
+ 		 /* ...and now for the proper property */
+  		transition:.2s;
+}
+
+.contact-list:hover {
+		color:$primary-red;
+}	
