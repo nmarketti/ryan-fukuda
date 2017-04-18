@@ -96,8 +96,8 @@
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .35s, visibility .35s, height .35s;
-  transition: opacity .35s, visibility .35s, height .35s;
+  -webkit-transition: visibility 1s, height 1s;
+  transition: visibility 1s, height 1s;
   overflow: hidden;
 }
 .overlay.open {
@@ -108,20 +108,24 @@
 .overlay.open li {
   -webkit-animation: fadeInRight .5s ease forwards;
           animation: fadeInRight .5s ease forwards;
-  -webkit-animation-delay: .35s;
-          animation-delay: .35s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 .overlay.open li:nth-of-type(2) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: .55s;
+          animation-delay: .55s;
 }
 .overlay.open li:nth-of-type(3) {
-  -webkit-animation-delay: .45s;
-          animation-delay: .45s;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 .overlay.open li:nth-of-type(4) {
-  -webkit-animation-delay: .50s;
-          animation-delay: .50s;
+  -webkit-animation-delay: .65s;
+          animation-delay: .65s;
+}
+.overlay.open li:nth-of-type(5) {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
 }
 .overlay nav {
   position: relative;
