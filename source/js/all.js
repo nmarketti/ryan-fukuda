@@ -9,11 +9,11 @@ var $menu = $("#menu"),
     $window = $(window);
 	$body = $("html, body")
 
-$menu.on("click","a", function(){
+$menu.on("click", "a", function(){
     var $this = $(this),
         href = $this.attr("href"),
         topY = $(href).offset().top;
-		$(this).toggleClass('active');
+		$('#toggle').toggleClass('active');
         $('#overlay').toggleClass('open');
    
     TweenMax.to($window, 1, {
@@ -21,7 +21,7 @@ $menu.on("click","a", function(){
             y: topY, 
             autoKill: true
         }, 
-        ease:Power3.easeOut 
+        ease:Power2.easeInOut 
      });
   
   return false;
