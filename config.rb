@@ -10,15 +10,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-activate :directory_indexes
-
 # General
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :directory_indexes
 end
 
+  activate :directory_indexes
 
 # DatoCMS
 activate :dato, live_reload: true
