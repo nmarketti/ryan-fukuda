@@ -2,8 +2,8 @@ machine:
   ruby:
     version: 2.4.0
 deployment:
-  production:
-    branch: production
+  staging:
+    branch: development
     commands:
       - bundle exec middleman s3_sync
 
