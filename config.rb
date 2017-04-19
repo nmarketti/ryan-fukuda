@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :directory_indexes
+
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -15,8 +17,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
-
-  activate :directory_indexes
 
 # DatoCMS
 activate :dato, live_reload: true
