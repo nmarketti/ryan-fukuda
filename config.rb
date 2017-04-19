@@ -47,6 +47,7 @@ configure :build do
   activate :directory_indexes
 end
 
+
 # DatoCMS
 activate :dato, live_reload: true
 

@@ -17,22 +17,32 @@
 	position:absolute;
 	top:35px;
 	left:25px;
-	object {
+	a {
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		/* ...and now for the proper property */
+		transition:.5s;
+	}
+	a:hover {
+		color:$primary-red;
+	}
+	
+	.social-icon {
+		font-size:18px;
+		position:relative;
+		text-decoration:none;
+	}
+	.fa {
+		color:#000000;
 		padding-left:25px;
 	}
 }
 
-a.svg {
-  position: relative;
-  display: inline-block; 
-}
-a.svg:after {
-  content: ""; 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left:0;
+// Instagram
+.instagram:hover {
+	color:blue;
 }
 
 
