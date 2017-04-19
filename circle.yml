@@ -3,9 +3,13 @@ machine:
     version: 2.4.0
 deployment:
   production:
-    branch: master
+    branch: production
     commands:
       - bundle exec middleman s3_sync
+
+notify:
+  webhooks:
+  - url: https://webhooks.datocms.com/012f4cc78bc035d8f005/deploy-results
 
 test:
   override:
