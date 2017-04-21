@@ -117,7 +117,20 @@ body {
     padding-bottom:50px;
 }
 
-////////////////// Blog
+////////////////// Contact
+
+.contact-desc {
+    margin-top:-80px;
+}
+
+.contact-row {
+    padding-bottom:0px;
+
+        .contact-col {
+            padding-bottom:80px;
+        }
+}
+
 
 
 } // Close Mobile
