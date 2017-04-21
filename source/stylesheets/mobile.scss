@@ -1,4 +1,4 @@
-// Hero
+////////////////// Hero
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 668px){ 
 
@@ -94,6 +94,27 @@ body {
 
 .social {
     visibility: hidden;
+}
+
+
+////////////////// Services
+
+.service-block {
+    height:500px;
+}
+
+////////////////// Section Headers
+.section-header {
+    height:50px;
+}
+
+.serviceHeader, .ventureHeader, .blogHeader, .contactHeader {
+    font-size:3em;
+}
+
+////////////////// Ventures
+.ventures {
+    padding-bottom:50px;
 }
 
 } // Close Mobile
