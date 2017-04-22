@@ -4,6 +4,7 @@ $(window).on('load resize', function(){
 $(".hero-wrapper").css("height", window.innerHeight);
 });
 
+
 // Scroll 2 ID
 var $menu = $("#menu"),
     $window = $(window);
@@ -27,6 +28,7 @@ $menu.on("click", "a", function(){
   return false;
 });  
 
+// FAQ Scroll2ID
  $(document).ready(function() {
         $('html, body').hide();
 

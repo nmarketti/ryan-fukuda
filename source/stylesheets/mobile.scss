@@ -1,0 +1,136 @@
+////////////////// Hero
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 668px){ 
+
+body {
+    -webkit-overflow-scrolling: touch;    
+}
+
+.close {
+    top:46%;
+}
+
+.blue-content {
+    top:25%;
+    left:35%;
+    
+        .blue-title {
+            width:50%;
+        }
+}
+
+.blue-left-block {
+        top:50%;
+    width:100%;
+    height:50%;
+    left:-100%;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+
+
+        .blue-active-left {
+                top: 40%;
+                height:50%;
+                left: 50%;
+                width: 80%;
+                .intro-text {
+                    font-size:18px;
+                    padding-bottom:50px;
+                }
+        }
+}
+
+.blue-right-block {
+    top:0;
+    right:-100%;
+    width:100%;
+    height:50%;
+}
+
+// Red Block
+
+.red-content {
+    top:75%;
+    left:35%;
+    
+        .red-title {
+            width:50%;
+            text-align:left;
+        }
+
+        .right-arrow img{
+            left:0;
+            position:absolute;
+        }
+}
+
+.red-right-block {
+    right:-100%;
+    width:100%;
+    height:50%;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+
+
+        .red-active-right {
+                top: 40%;
+                height:50%;
+                left: 50%;
+                width: 80%;
+                .intro-text {
+                    font-size:18px;
+                    padding-bottom:50px;
+                }
+        }
+}
+
+.red-left-block {
+    top:0;
+    width:100%;
+    height:50%;
+    left:-100%;
+
+}
+
+.social {
+    visibility: hidden;
+}
+
+
+////////////////// Services
+
+.service-block {
+    height:500px;
+}
+
+////////////////// Section Headers
+.section-header {
+    height:50px;
+}
+
+.serviceHeader, .ventureHeader, .blogHeader, .contactHeader {
+    font-size:3em;
+}
+
+////////////////// Ventures
+.ventures {
+    padding-bottom:50px;
+}
+
+////////////////// Contact
+
+.contact-desc {
+    margin-top:-80px;
+}
+
+.contact-row {
+    padding-bottom:0px;
+
+        .contact-col {
+            padding-bottom:80px;
+        }
+}
+
+
+
+} // Close Mobile

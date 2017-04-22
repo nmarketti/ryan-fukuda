@@ -1,6 +1,8 @@
 .blog {
-	height: 700px;
-	background-color:red;
+    height:100%;
+    padding: 50px 0px;
+	background-color:$primary-red;
+	align-items:flex-start;
 
 	img {
 		width:100%;
