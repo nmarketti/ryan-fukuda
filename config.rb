@@ -29,9 +29,15 @@ configure :development do
  activate :livereload
 end
 
-# S3
+# S3 Staging
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                = 'staging.ryanfukuda.com'
+  s3_sync.region                = 'us-east-1'
+end
+
+# S3 Staging
+activate :s3_sync do |s3_sync_production|
+  s3_sync.bucket                = 'ryanfukuda.com'
   s3_sync.region                = 'us-east-1'
 end
 
