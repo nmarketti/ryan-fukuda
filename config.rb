@@ -29,17 +29,19 @@ configure :development do
 end
 
 # S3 Staging
-configure :staging
+configure :staging do
     activate :s3_sync do |s3_sync|
       s3_sync.bucket                = 'staging.ryanfukuda.com'
       s3_sync.region                = 'us-east-1'
   end
+end
 
-configure :production
+configure :production do
     activate :s3_sync do |s3_sync|
       s3_sync.bucket                = 'ryanfukuda.com'
       s3_sync.region                = 'us-east-1'
-  end
+end
+end
 
 # FAQ Layout Header
 page "/faq.html", :layout => "faq"
