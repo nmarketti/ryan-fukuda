@@ -17,7 +17,9 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip
-  activate :external_pipeline
+  activate :external_pipeline,
+     name: :S3_Sync,
+     command: "npm run production",
 
 end
 
@@ -30,12 +32,20 @@ configure :development do
  activate :livereload
 end
 
-# # S3 Staging
-# activate :s3_sync do |s3_sync|
-#   s3_sync.bucket                = 'staging.ryanfukuda.com'
-#   s3_sync.region                = 'us-east-1'
-# end
+# S3 Staging
+configure :staging
+    activate :s3_sync do
+      s3_sync.bucket                = 'staging.ryanfukuda.com'
+      s3_sync.region                = 'us-east-1'
+  end
+end
 
+configure :production
+    activate :s3_sync do
+      s3_sync.bucket                = 'ryanfukuda.com'
+      s3_sync.region                = 'us-east-1'
+  end
+end
 
 # FAQ Layout Header
 page "/faq.html", :layout => "faq"
