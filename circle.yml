@@ -5,11 +5,11 @@ deployment:
   development:
     branch: development
     commands:
-      - bundle exec middleman s3_sync
+      - bundle exec middleman s3_sync --environment=staging
   production:
     branch: master
     commands:
-      - bundle exec middleman s3_sync_production
+      - bundle exec middleman s3_sync --environment=production
 
 notify:
   webhooks:

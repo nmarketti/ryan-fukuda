@@ -17,7 +17,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip
-
 end
 
 # DatoCMS
@@ -30,15 +29,18 @@ configure :development do
 end
 
 # S3 Staging
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = 'staging.ryanfukuda.com'
-  s3_sync.region                = 'us-east-1'
+configure :staging do
+    activate :s3_sync do |s3_sync|
+      s3_sync.bucket                = 'staging.ryanfukuda.com'
+      s3_sync.region                = 'us-east-1'
+  end
 end
 
-# S3 Staging
-activate :s3_sync do |s3_sync_production|
-  s3_sync.bucket                = 'ryanfukuda.com'
-  s3_sync.region                = 'us-east-1'
+configure :production do
+    activate :s3_sync do |s3_sync|
+      s3_sync.bucket                = 'ryanfukuda.com'
+      s3_sync.region                = 'us-east-1'
+end
 end
 
 # FAQ Layout Header
