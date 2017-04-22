@@ -17,10 +17,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip
-  activate :external_pipeline,
-     name: :S3_Sync,
-     command: "npm run production",
-
 end
 
 # DatoCMS
