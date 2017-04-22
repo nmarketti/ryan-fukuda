@@ -5,11 +5,11 @@ deployment:
   development:
     branch: development
     commands:
-      - bundle exec middleman staging
+      - bundle exec middleman --environment=staging
   production:
     branch: master
     commands:
-      - bundle exec middleman production
+      - bundle exec middleman --environment=production
 
 notify:
   webhooks:
