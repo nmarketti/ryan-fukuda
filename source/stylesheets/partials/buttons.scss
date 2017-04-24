@@ -22,13 +22,14 @@
 
 	&:hover {
 		@include btn-primary-hover(.8s);
+			a {
+				@include btn-primary-hover(.8s);
+				color:$white;
+		}
 	}
 
 	a {
 		color:$secondary-blue;
-		&:hover {
-			color:$white;
-		}
 	}
 }
 
