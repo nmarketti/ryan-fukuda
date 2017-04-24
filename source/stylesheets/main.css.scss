@@ -3,6 +3,9 @@
 @import 'normalize';
 @import 'flexboxgrid';
 
+// Mixins
+@import 'mixins/mixins';
+ 
 // Variables
 @import 'variables/colors';
 @import 'variables/global';
@@ -11,7 +14,6 @@
 @import 'partials/typography';
 @import 'partials/buttons';
 @import 'partials/nav';
-@import 'partials/contact';
 
 // Pages
 @import 'homepage';

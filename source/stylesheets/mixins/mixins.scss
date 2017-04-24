@@ -1,0 +1,4 @@
+@mixin btn-primary-hover($btn-primary-hover) {
+    	-webkit-transition:$btn-primary-hover;
+		transition:$btn-primary-hover;
+}

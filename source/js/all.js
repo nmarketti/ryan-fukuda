@@ -160,6 +160,33 @@ new ScrollMagic.Scene({
 .setTween(ventures)
 .addTo(ctrl);
 
+// Contact
+
+var event = new TimelineMax();
+
+event.from('.contactHeader', .5, {yPercent:100, ease:Power4.easeOut});
+
+
+new ScrollMagic.Scene({
+	triggerHook:0,
+	triggerElement:'#contact',
+})
+.setTween(event)
+.addTo(ctrl);
+
+// Blog Header
+var blogHeader = new TimelineMax();
+
+blogHeader.from('.blogHeader', .5, {yPercent:100, ease:Power4.easeOut});
+
+
+new ScrollMagic.Scene({
+	triggerHook:0,
+	triggerElement:'#blogHeader',
+})
+.setTween(blogHeader)
+.addTo(ctrl);
+
 
 // Energy Readings
 
@@ -294,24 +321,20 @@ new ScrollMagic.Scene({
 .setTween(venturesContent)
 .addTo(ctrl);
 
+// Blog
 
-// Contact
+var blogContent = new TimelineMax();
 
-var event = new TimelineMax();
+blogContent.staggerFrom(".blogStagger", 1, {yPercent:5, opacity:0, ease:Power4.EaseInOut}, .10);
 
-event.from($('.contactHeader'), .5, {yPercent:100, ease:Power1.easeOut});
 
 
 new ScrollMagic.Scene({
 	triggerHook:0,
-	triggerElement:'#contact',
+	triggerElement:'#blogTrigger',
 })
-.setTween(event)
+.setTween(blogContent)
 .addTo(ctrl);
-
-
-
-
 
 
 });
