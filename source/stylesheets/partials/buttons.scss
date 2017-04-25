@@ -33,6 +33,24 @@
 	}
 }
 
+.book-appointment-btn {
+	position:absolute;
+	left:50%;
+	top:85%;
+	transform: translate(-50%, -50%);
+	@include btn-primary-hover(.8s);
+
+			a {
+				font-size:.8em;
+				color:$primary-blue;
+			}
+			
+	&:hover a {
+		color:$white;
+		@include btn-primary-hover(.8s);
+	}
+}
+
 .primary-btn {
 	background-color:$secondary-blue;
 }

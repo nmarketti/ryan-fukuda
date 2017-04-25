@@ -28,6 +28,16 @@ $menu.on("click", "a", function(){
   return false;
 });  
 
+$(".bookScroll").click(function(e) {
+ TweenMax.to($window, 1, {
+        scrollTo:{
+            y: "#services",
+            autoKill: true
+        }, 
+        ease:Power2.easeInOut 
+     });
+});
+
 // FAQ Scroll2ID
  $(document).ready(function() {
         $('html, body').hide();
