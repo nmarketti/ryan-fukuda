@@ -37,8 +37,8 @@ var
   },
 
   js = {
-    in: src + 'javascripts/*.{js,coffee}',
-    out: dest + 'javascripts/'
+    in: src + 'js/*.{js,coffee}',
+    out: dest + 'js/'
   },
 
   uglifyOpts = {
