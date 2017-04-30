@@ -12,10 +12,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# General
+# Optimization
+  activate :minify_html do |html|
+    html.remove_quotes = false
+    html.remove_intertag_spaces = true
+  end
+
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
   activate :gzip
 end
 
