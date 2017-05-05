@@ -13,8 +13,11 @@ deployment:
 
 notify:
   webhooks:
-  - url: https://webhooks.datocms.com/d08f2e458c274e36df23/deploy-results
   - url: https://webhooks.datocms.com/012f4cc78bc035d8f005/deploy-results
+
+notify:
+  webhooks:
+  - url: https://webhooks.datocms.com/d08f2e458c274e36df23/deploy-results
 
 test:
   override:
