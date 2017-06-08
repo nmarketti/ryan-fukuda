@@ -205,7 +205,7 @@ var paneltext = $(this).find(".panel-text");
 
 energy.from(".energyOne", 1, {css:{marginTop:100, opacity:0}, ease:Power4.EaseInOut}, .30)
 energy.staggerFromTo(paneltext, 1, {yPercent:100 }, {yPercent:0, ease:Power4.easeOut}, .10)
-energy.from(".energy", 4, { opacity:0, ease:Power4.ease}, {opacity:1}, .80)
+energy.from(".energy", 2, { opacity:0, ease:Power4.ease}, {opacity:1}, .80)
 energy.from(".energyTwo", 1, {css:{marginTop:10, opacity:0}, ease:Power4.EaseInOut}, .60);
 
 
@@ -235,7 +235,7 @@ var healing = new TimelineMax();
 
 healing.from(".healingOne", 1, {css:{marginTop:100, opacity:0}, ease:Power4.EaseInOut}, .30)
 healing.staggerFromTo(".panel-text-energy", 1, {yPercent:100 }, {yPercent:0, ease:Power4.easeOut}, .10)
-healing.from(".healing", 4, { opacity:0, ease:Power4.ease }, .80)
+healing.from(".healing", 2, { opacity:0, ease:Power4.ease }, .80)
 healing.from(".healingTwo", 1, {css:{marginTop:10, opacity:0}, ease:Power4.EaseInOut}, .60);
 
 
@@ -266,7 +266,7 @@ var workshop = new TimelineMax();
 
 workshop.from(".workshopOne", 1, {css:{marginTop:100, opacity:0}, ease:Power4.EaseInOut}, .30)
 workshop.staggerFromTo(".panel-text-workshop", 1, {yPercent:100 }, {yPercent:0, ease:Power4.easeOut}, .10)
-workshop.from(".workshops", 4, { opacity:0, ease:Power4.ease }, .80)
+workshop.from(".workshops", 2, { opacity:0, ease:Power4.ease }, .80)
 workshop.from(".workshopTwo", 1, {css:{marginTop:10, opacity:0}, ease:Power4.EaseInOut}, .60);
 
 
@@ -297,7 +297,7 @@ var workshop = new TimelineMax();
 
 event.from(".eventOne", 1, {css:{marginTop:100, opacity:0}, ease:Power4.EaseInOut}, .30)
 event.staggerFromTo(".panel-text-events", 1, {yPercent:100 }, {yPercent:0, ease:Power4.easeOut}, .10)
-event.from(".events", 4, { opacity:0, ease:Power4.ease }, .80)
+event.from(".events", 2, { opacity:0, ease:Power4.ease }, .80)
 event.from(".eventTwo", 1, {css:{marginTop:10, opacity:0}, ease:Power4.EaseInOut}, .60);
 
 
