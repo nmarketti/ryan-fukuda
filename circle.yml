@@ -2,7 +2,7 @@ machine:
   ruby:
     version: 2.4.0
 deployment:
-  development:
+  staging:
     branch: development
     commands:
       - bundle exec middleman s3_sync --environment=staging
@@ -14,9 +14,6 @@ deployment:
 notify:
   webhooks:
   - url: https://webhooks.datocms.com/012f4cc78bc035d8f005/deploy-results
-
-notify:
-  webhooks:
   - url: https://webhooks.datocms.com/d08f2e458c274e36df23/deploy-results
 
 test:
