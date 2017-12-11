@@ -37,12 +37,13 @@
 	position:absolute;
 	left:50%;
 	top:85%;
+	background-color:#000000;
 	transform: translate(-50%, -50%);
 	@include btn-primary-hover(.8s);
 
 			a {
 				font-size:.8em;
-				color:$primary-blue;
+				color:#FFFFFF;
 			}
 			
 	&:hover a {

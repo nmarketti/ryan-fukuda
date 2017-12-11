@@ -56,9 +56,20 @@
 	}
 }
 
+.intro-desc {
+	position: absolute;
+	width:25%;
+	top:65%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	p {
+		font-size:16px;
+		text-align: center;
+	}
+}
 .ryan-symbol {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	img {
@@ -149,12 +160,22 @@
 	text-align: right;
 }
 
-.right-arrow img {
+.right-arrow {
+	img {
 	height: 12px;
+	}
+		p {
+			font-size:14px;
+	}
 }
 
-.left-arrow img {
+.left-arrow {
+	img {
 	height: 12px;
+	}
+		p {
+			font-size:14px;
+		}
 }
 
 .arrow-hover-left {
