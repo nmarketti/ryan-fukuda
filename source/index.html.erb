@@ -211,33 +211,30 @@ title: Ryan Fukuda
 				</div>
 			</div>
 			<section id="services">
-				<!-- Occult Generation -->
+				<!-- Venture One -->
 				<div class="row">
 					<div class="col-sm-6 ventures">
-						<img src="images/occult-generation.jpg">
+						<img src="<%= dato.venture.venture_one_image %>">
 						<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 venture-description" id="ventureTrigger">
-							<h3 class="venture-one">Occult Generation</h3>
-							<h4 class="venture-two">Comic Series</h4>
-							<p class="venture-three">A successfully Kickstarter funded graphic novel series set in 1927 during the Harlem Renaissance. We are calling this
-								collaborative project, “a comic book made like a movie” using real life actors as the characters. After production,
-								the artist uses a unique digital methodology to create comic book magic.</p>
+							<h3 class="venture-one"><%= dato.venture.venture_one_header %></h3>
+							<h4 class="venture-two"><%= dato.venture.venture_one_subheader %></h4>
+							<p class="venture-three"><%= dato.venture.venture_one_copy %></p>
 							<div class="btn primary-btn venture-four">
-								<a href="http://www.occultgeneration.com/">Studio OG</a>
+								<%= dato.venture.venture_one_button %>
 							</div>
 						</div>
 					</div>
 
-					<!-- Fukuda Clan Venture -->
+					<!-- Venture Two -->
 
 					<div class="col-sm-6 ventures">
-						<img src="images/fukuda-clans.jpg">
+						<img src="<%= dato.venture.venture_two_image %>">
 						<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10  venture-description">
-							<h3 class="venture-five">Fukuda Clan Productions</h3>
-							<h4 class="venture-six">Film and Video</h4>
-							<p class="venture-seven">Founded in 2013 by the Fukuda Family. You can check out some of the video projects of worked on over the years as
-								a producer and director at my Tumblr page. Check it out: </p>
+							<h3 class="venture-five"><%= dato.venture.venture_two_header %></h3>
+							<h4 class="venture-six"><%= dato.venture.venture_two_subheader %></h4>
+							<p class="venture-seven"><%= dato.venture.venture_two_copy %> </p>
 							<div class="btn primary-btn venture-eight">
-								<a href="http://uberfukuda.tumblr.com/">UBERFUKUDA TUMBLR</a>
+								<%= dato.venture.venture_two_button %>
 							</div>
 						</div>
 					</div>
