@@ -17,6 +17,28 @@
 	}
 }
 
+.btn-blue-hover {
+	@include btn-primary-hover(.8s);
+
+	&:hover {
+		background-color:$secondary-blue;
+		@include btn-primary-hover(.8s);
+	}
+}
+
+.btn-red-hover {
+	@include btn-primary-hover(.8s);
+
+	&:hover {
+		background-color:$primary-yellow;
+		@include btn-primary-hover(.8s);
+	}
+}
+
+.btn-black {
+	background-color:$black;
+}
+
 .btn-white {
 	background-color:$white;
 
@@ -30,6 +52,23 @@
 
 	a {
 		color:$secondary-blue;
+	}
+}
+
+
+.btn-text {
+	padding:25px 0px;
+
+		a {
+			color:$white;
+		}
+
+		&:hover {
+		@include btn-primary-hover(.8s);
+			a {
+				@include btn-primary-hover(.8s);
+				color:$black;
+		}
 	}
 }
 
@@ -50,6 +89,10 @@
 		color:$white;
 		@include btn-primary-hover(.8s);
 	}
+}
+
+.panel-slide-btn {
+		background-color:#000000;
 }
 
 .primary-btn {
