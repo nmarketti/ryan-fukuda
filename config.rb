@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
+activate :pagination
 
 # Per-page layout changes
 page '/*.xml', layout: false
@@ -49,4 +50,28 @@ end
 end
 
 # FAQ Layout Header
-page "/faq.html", :layout => "faq"
+page "/faq.html", :layout => "interior"
+page "/faq.html", :layout => "interior"
+
+ignore "templates/*"
+
+dato.tap do |dato|
+
+  dato.blog_rolls.each do |article|
+    proxy "news-and-events/#{article.slug}/index.html", "templates/article.html", locals: { article: article }
+  end
+end
+
+helpers do
+
+def to_html(field)
+  if (field != nil)
+    Kramdown::Document.new(field).to_html
+  end
+
+
+  
+end  
+
+
+end
