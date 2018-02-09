@@ -9,3 +9,4 @@ gem 'middleman-livereload', '~> 3.4'
 gem 'middleman-s3_sync', '~> 4.0.1.rc.3'
 gem 'mime-types', '~> 3.0.0'
 gem "middleman-dato"
+gem 'middleman-paginate'

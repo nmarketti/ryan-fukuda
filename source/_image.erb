@@ -1,0 +1,8 @@
+<img 
+    sizes="100vw"
+    srcset="<%= img %>?<%= imgix %>&auto=compress,format&dpr=3 3x, 
+            <%= img %>?<%= imgix %>&auto=compress,format&dpr=2 2x,
+            <%= img %>?<%= imgix %>&auto=compress,format&dpr=1 1x"
+    src="<%= img %>?<%= imgix %>&auto=compress,format"
+    class="img-responsive <%= (defined? cssclass) ? cssclass : '' %>" 
+> 

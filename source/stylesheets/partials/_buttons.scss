@@ -1,6 +1,7 @@
 .btn {
 	display:inline-block;
 	padding:20px;
+	text-decoration:none;
 	@include btn-primary-hover(.8s);
 
 	&:hover {
@@ -99,7 +100,15 @@
 	background-color:$secondary-blue;
 }
 
-.energy-btn {
+.energy-btn{
+	background-color:$primary-red;
+}
+
+.blog-btn {
+	color: #FFFFFF;
+    font-size: 1.2em;
+    text-decoration: none;
+	font-weight: 200;
 	background-color:$primary-red;
 }
 
