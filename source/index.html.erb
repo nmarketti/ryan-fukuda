@@ -90,7 +90,7 @@ title: Ryan Fukuda
 				<%= partial(:image, :locals => { :img => blog.image.url(), :imgix => 'w=400&h=260&fit=crop', :cssclass => 'pic'}) %>
 				<h3><%= blog.title %></h3>
 				<h4><%= blog.tag %></h4>
-				<p><%= to_html(blog.blog_content) %></p>
+				<p> <%= truncate_words(to_html(blog.blog_content), :length => 24) %> </p>
                    <a href="/news-and-events/<%= blog.slug %>" class="btn blog-btn">Read Article</a>
 			</div>
 		<% end %>
