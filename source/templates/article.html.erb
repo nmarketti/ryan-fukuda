@@ -24,11 +24,12 @@
     <div class="wrap container">
         <div class="row article-main">
             <div class="col-sm-6">
-                <h4 class="pricing">Pricing</h4>
+                <h4 class="pricing"><%= article.pricing_main %></h4>
                 <h4 class="pricing"><%= article.pricing %></h4>
             </div>
             <div class="col-sm-6">
                 <p class="blog-content"><%= article.blog_content %></p>
+                <a href="<%= article.article_cta_link %>" class="btn blog-btn"><%= article.article_cta_title %></a>
             </div>
         </div>
     </div>
