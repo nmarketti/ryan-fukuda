@@ -11,9 +11,12 @@ body {
 }
 
 .book-appointment-btn {
-    width:100%;
-    z-index:10;
-    top:95%;
+     position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    top:auto;
+    -webkit-transform: translate(-50%, 0%);
         a {
             display:flex;
             justify-content:center;

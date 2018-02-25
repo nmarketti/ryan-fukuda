@@ -1,6 +1,9 @@
 --- 
 title: Ryan Fukuda
 ---
+
+<!-- Blue Section -->
+<div class="hero-wrapper">
 <div class="section-blue">
 	<div class="blue-bar"></div>
 	<div class="blue-wave"></div>
@@ -9,6 +12,9 @@ title: Ryan Fukuda
 			<p class="intro-text">
 				<%= dato.homepage.hero_left_body %>
 			</p>
+			<div class="btn btn-black btn-blue-hover">
+					<a href="#" class="projectsScroll"><%= dato.homepage.hero_left_button %></a>
+			</div>
 		</div>
 	</div>
 	<div class="blue-right-block"></div>
@@ -20,13 +26,15 @@ title: Ryan Fukuda
 		<p>View More</p>
 	</div>
 </div>
+
+<!-- Center -->
 <div class="center-desc">
 	<div class="ryan-symbol">
 		<img src="images/ryan-symbol.png" class="symbol-blue">
 		<img src="images/rf-symbol-red.png" class="symbol-red">
 	</div>
 		<div class="intro-desc">
-			<p>Ryan is a creative producer and visionary healer living and working in San Francisco, CA. Want to learn more? Pick a side to explore more.</p>
+			<p<%= dato.homepage.hero_center_text %>></p>
 		</div>
 </div>
 <div class="btn book-appointment-btn">
@@ -36,6 +44,8 @@ title: Ryan Fukuda
 	<p class="close"><img src="images/x-btn.svg"></p>
 </div>
 
+
+<!-- Red Section -->
 <div class="section-red">
 	<div class="red-bar"></div>
 	<div class="red-wave"></div>
@@ -44,6 +54,12 @@ title: Ryan Fukuda
 			<p class="intro-text">
 				<%= dato.homepage.hero_right_body %>
 			</p>
+			<div class="btn btn-black btn-red-hover">
+				<%= dato.homepage.hero_right_button %>
+			</div>
+			<div class="btn-text">
+				<a href="#" class="serviceScroll"><%= dato.homepage.hero_right_secondary_button %></a>
+			</div>
 		</div>
 	</div>
 	<div class="red-left-block"></div>
@@ -57,11 +73,27 @@ title: Ryan Fukuda
 </div>
 </div>
 </div>
+</div>
+<!--- Quote -->
 <div class="container">
 	<div class="row center-xs middle-xs">
 		<div class="col-xs-10 col-sm-8">
 			<p class="quote"><%= dato.quote.quote %></p>
 		</div>
+	</div>
+</div>
+
+<div class="wrap container">
+	<div class="row between-xs">
+		<% dato.blog_rolls.each do |blog| %>
+			<div class="col-sm-4">
+				<%= partial(:image, :locals => { :img => blog.image.url(), :imgix => 'w=400&h=260&fit=crop', :cssclass => 'pic'}) %>
+				<h3><%= blog.title %></h3>
+				<h4><%= blog.tag %></h4>
+				<p> <%= truncate_words(to_html(blog.blog_content), :length => 24) %> </p>
+                   <a href="/news-and-events/<%= blog.slug %>" class="btn blog-btn">Read Article</a>
+			</div>
+		<% end %>
 	</div>
 </div>
 
@@ -76,6 +108,7 @@ title: Ryan Fukuda
 				</div>
 			</div>
 		</div>
+
 		<!-- Service Block Energy Readings -->
 		<div class="row middle-xs" id="energyTrigger">
 			<div class="col-sm-6 col-xs-12 service-title energy service-block">
@@ -211,33 +244,30 @@ title: Ryan Fukuda
 				</div>
 			</div>
 			<section id="services">
-				<!-- Occult Generation -->
+				<!-- Venture One -->
 				<div class="row">
 					<div class="col-sm-6 ventures">
-						<img src="images/occult-generation.jpg">
+						<img src="<%= dato.venture.venture_one_image.url() %>">
 						<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 venture-description" id="ventureTrigger">
-							<h3 class="venture-one">Occult Generation</h3>
-							<h4 class="venture-two">Comic Series</h4>
-							<p class="venture-three">A successfully Kickstarter funded graphic novel series set in 1927 during the Harlem Renaissance. We are calling this
-								collaborative project, “a comic book made like a movie” using real life actors as the characters. After production,
-								the artist uses a unique digital methodology to create comic book magic.</p>
+							<h3 class="venture-one"><%= dato.venture.venture_one_header %></h3>
+							<h4 class="venture-two"><%= dato.venture.venture_one_subheader %></h4>
+							<p class="venture-three"><%= dato.venture.venture_one_copy %></p>
 							<div class="btn primary-btn venture-four">
-								<a href="http://www.occultgeneration.com/">Studio OG</a>
+								<%= dato.venture.venture_one_button %>
 							</div>
 						</div>
 					</div>
 
-					<!-- Fukuda Clan Venture -->
+					<!-- Venture Two -->
 
 					<div class="col-sm-6 ventures">
-						<img src="images/fukuda-clans.jpg">
+						<img src="<%= dato.venture.venture_two_image.url() %>">
 						<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10  venture-description">
-							<h3 class="venture-five">Fukuda Clan Productions</h3>
-							<h4 class="venture-six">Film and Video</h4>
-							<p class="venture-seven">Founded in 2013 by the Fukuda Family. You can check out some of the video projects of worked on over the years as
-								a producer and director at my Tumblr page. Check it out: </p>
+							<h3 class="venture-five"><%= dato.venture.venture_two_header %></h3>
+							<h4 class="venture-six"><%= dato.venture.venture_two_subheader %></h4>
+							<p class="venture-seven"><%= dato.venture.venture_two_copy %> </p>
 							<div class="btn primary-btn venture-eight">
-								<a href="http://uberfukuda.tumblr.com/">UBERFUKUDA TUMBLR</a>
+								<%= dato.venture.venture_two_button %>
 							</div>
 						</div>
 					</div>

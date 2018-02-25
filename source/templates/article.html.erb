@@ -1,0 +1,36 @@
+<section class="article">
+    <div class="article-hero">
+        <div class="container-fluid">
+            <div class="row middle-xs" id="energyTrigger">
+                    <div class="col-sm-6 col-xs-12 block">
+                        <%= partial(:image, :locals => { :img => article.image.url(), :imgix => 'fit=clamp', :cssclass => 'pic'}) %>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-4">
+                        <h4 class=blog-details><%= article.event_date %></h4>
+                        <h4 class="blog-details"><%= article.event_time %></h4>
+                        <h1 class="blog-title"><%= article.title %></h1>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="row center-xs">
+        <div class="col-xs-12 col-sm-8">
+            <div class="service-divider">
+                <div class="divider-healings-fixed"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap container">
+        <div class="row article-main">
+            <div class="col-sm-6">
+                <h4 class="pricing"><%= article.pricing_main %></h4>
+                <h4 class="pricing"><%= article.pricing %></h4>
+            </div>
+            <div class="col-sm-6">
+                <p class="blog-content"><%= article.blog_content %></p>
+                <a href="<%= article.article_cta_link %>" class="btn blog-btn"><%= article.article_cta_title %></a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -38,6 +38,30 @@ $(".bookScroll").click(function(e) {
      });
 });
 
+
+// Explore Projects Blue Panel Scroll Button
+$(".projectsScroll").click(function(e) {
+ TweenMax.to($window, 1, {
+        scrollTo:{
+            y: "#ventures",
+            autoKill: true
+        }, 
+        ease:Power2.easeInOut 
+     });
+});
+
+
+// Learn More Red Panel Scroll Button
+$(".serviceScroll").click(function(e) {
+ TweenMax.to($window, 1, {
+        scrollTo:{
+            y: "#services",
+            autoKill: true
+        }, 
+        ease:Power2.easeInOut 
+     });
+});
+	
 // FAQ Scroll2ID
  $(document).ready(function() {
         $('html, body').hide();
@@ -113,7 +137,7 @@ bluepanel.to(".blue-right-block", 1, {xPercent:-100, ease:Power4.easeInOut}, .45
 $(".left-arrow").click(function(){ bluepanel.play() }) ;
 
 
-$(".close").click(function(){ bluepanel.reverse() }) ;
+$(".close, .projectsScroll").click(function(){ bluepanel.reverse() }) ;
 
 
 
@@ -130,7 +154,7 @@ redpanel.to(".red-right-block", 1, {xPercent:-100, ease:Power4.easeInOut}, .45)
 
 $(".right-arrow").click(function(){ redpanel.play() }) ;
 
-$(".close").click(function(){ redpanel.reverse() }) ;
+$(".close, .serviceScroll").click(function(){ redpanel.reverse() }) ;
 
 
 
